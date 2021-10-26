@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Make Up Catalog</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Make Up Catalog</h1>
+    </header>
+    <main>
+      <form class="catalog-control">
+        <div class="form-control">
+          <label for="filter-name">Nome:</label>
+          <input type="text" id="filter-name" />
+        </div>
+        <div class="form-control">
+          <label for="filter-brand">Marca:</label>
+          <select id="filter-brand">
+            <option value="">Please</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label for="filter-type">Tipo:</label>
+          <select id="filter-type">
+            <option value="">WAIT</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label for="sort"></label>
+          <select id="sort-type">
+            <option selected>Melhor Avaliados</option>
+            <option>Menores Preços</option>
+            <option>Maiores Preços</option>
+            <option>A-Z</option>
+            <option>Z-A</option>
+          </select>
+        </div>
+      </form>
+      <div class="center">
+        <img src="/img/spinner1.gif" alt="spinner" id="spinner" />
+      </div>
+      <section class="catalog"></section>
+    </main>
+
+    <script type="module" src="js/principal.js"></script>
+  </body>
+</html>
